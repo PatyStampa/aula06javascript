@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 01</title>
+</head>
+<body>
+    <!--Faça um programa que peça uma nota, entre zero e dez. 
+    Mostre uma mensagem caso o valor seja inválido e continue 
+    pedindo até que o usuário informe um valor válido. -->
+
+    <script>
+
+        let n;
+        do{
+            n = parseFloat(prompt("Digite uma nota entre 0 e 10"));
+            if(isNaN(n) || n< 0 || n > 10){
+                alert("Nota inválida!");
+
+            }
+
+
+        }while(isNaN(n) || n< 0 || n > 10);
+
+        alert("Aí.... Menino!!");
+
+
+
+
+    </script>
+</body>
+</html>
